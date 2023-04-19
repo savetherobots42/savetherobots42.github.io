@@ -1,0 +1,110 @@
+<!-- how-to-run-scripts.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Rosasco's How To Website - How to Run Scripts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Peter Rosasco's How To Website</h1>
+    </header>
+    <nav>
+        <div class="nav-item">
+            <a href="index.html">Introduction</a>
+        </div>
+        <div class="nav-item">
+            <a href="dns-dhcp-ptr-records.html">DNS, DHCP, and PTR Records</a>
+        </div>
+        <div class="nav-item">
+            <a href="creating-static-records.html">Creating Static Records</a>
+        </div>
+        <div class="nav-item">
+            <a href="setting-up-environment.html">Setting Up Environment</a>
+        </div>
+        <div class="nav-item">
+            <a href="creating-scripts.html">Creating Scripts</a>
+        </div>
+        <div class="nav-item active">
+            <a href="how-to-run-scripts.html">How to Run Scripts</a>
+        </div>
+        <div class="nav-item">
+            <a href="troubleshooting.html">Troubleshooting</a>
+        </div>
+        <div class="nav-item">
+            <a href="conclusion.html">Conclusion</a>
+        </div>
+    </nav>
+    <main>
+        <section id="how-to-run-scripts">
+            <h2>How to Run Scripts</h2>
+            <p>Running PowerShell scripts is a straightforward process. Here are the steps to follow:</p>
+
+            <ol>
+                <li><strong>Open PowerShell:</strong> To open PowerShell, press the Windows key + R, then type
+                    "powershell" and press Enter.</li>
+                <li><strong>Set Execution Policy:</strong> By default, PowerShell only allows you to run signed scripts.
+                    To run unsigned scripts, you'll need to set the execution policy to "RemoteSigned" or
+                    "Unrestricted".
+                    To do this, type "Set-ExecutionPolicy RemoteSigned" or "Set-ExecutionPolicy Unrestricted" and press
+                    Enter.</li>
+                <li><strong>Change to Script Directory:</strong> Navigate to the directory where your script is located
+                    by typing "cd path\to\directory" and pressing Enter. Alternatively, you can use the "cd" command to
+                    change to the directory by typing "cd ." and pressing Tab to autocomplete the directory name.</li>
+                <li><strong>Run the Script:</strong> To run the script, type "./scriptname.ps1" and press Enter. The
+                    script will execute and output any results to the PowerShell console.</li>
+            </ol>
+
+            <p>Here is a video tutorial demonstrating how to run a PowerShell script:</p>
+
+            <!-- Insert embedded YouTube video here -->
+            <div class="center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <p>When you run the example script from the "Creating Scripts" page, it will create DHCP reservations, A
+                records, and PTR records in DNS for the devices on your network. Here are examples of the output for
+                each:</p>
+            <h3>DHCP Reservations</h3>
+            <p>The following image shows the DHCP reservations that were created by the example script:</p>
+            <div class="center">
+                <img src="DCHP_output.png" alt="DHCP reservations output">
+                <p class="caption">DHCP reservations output</p>
+            </div>
+            <h3>Forward Lookup Zone</h3>
+            <p>The following image shows the forward lookup zone in DNS, with all of the new A records that were created
+                by the example script:</p>
+            <div class="center">
+                <img src="forward_output.png" alt="Forward lookup zone output">
+                <p class="caption">Forward lookup zone output</p>
+            </div>
+            <h3>Reverse Lookup Zone</h3>
+            <p>The following image shows the reverse lookup zone in DNS, with all of the new PTR records that were
+                created by the example script:</p>
+            <div class="center">
+                <img src="ptr_output.png" alt="Reverse lookup zone output">
+                <p class="caption">Reverse lookup zone output</p>
+            </div>
+            <p>By running the script and examining the output, you can ensure that the DHCP reservations, A records, and
+                PTR records were created correctly, and troubleshoot any issues that may arise. The example script can
+                be modified to suit your specific needs, such as adding or removing DHCP reservations or modifying DNS
+                records.</p>
+            <p>Additionally, you can modify the example script to create other types of DNS records, such as MX records
+                for email servers, or SRV records for domain controllers.</p>
+            <p>Overall, using PowerShell scripts to manage your network infrastructure can save time and reduce errors.
+                By automating repetitive tasks and ensuring consistency across devices, you can improve the reliability
+                and security of your network.</p>
+        </section>
+    </main>
+    <footer>
+        Project by Peter Rosasco, CMIT 220 - 2023
+    </footer>
+</body>
+
+</html>

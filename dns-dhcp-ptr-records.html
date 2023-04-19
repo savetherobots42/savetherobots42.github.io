@@ -1,0 +1,71 @@
+<!-- dns-dhcp-ptr-records.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Rosasco's How To Website - DNS, DHCP, and PTR Records</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Peter Rosasco's How To Website</h1>
+    </header>
+    <nav>
+        <div class="nav-item">
+            <a href="index.html">Introduction</a>
+        </div>
+        <div class="nav-item active">
+            <a href="dns-dhcp-ptr-records.html">DNS, DHCP, and PTR Records</a>
+        </div>
+        <div class="nav-item">
+            <a href="creating-static-records.html">Creating Static Records</a>
+        </div>
+        <div class="nav-item">
+            <a href="setting-up-environment.html">Setting Up Environment</a>
+        </div>
+        <div class="nav-item">
+            <a href="creating-scripts.html">Creating Scripts</a>
+        </div>
+        <div class="nav-item">
+            <a href="how-to-run-scripts.html">How to Run Scripts</a>
+        </div>
+        <div class="nav-item">
+            <a href="troubleshooting.html">Troubleshooting</a>
+        </div>
+        <div class="nav-item">
+            <a href="conclusion.html">Conclusion</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="dns-dhcp-ptr-records">
+            <h2>DNS, DHCP, and PTR Records</h2>
+            <p>This page provides an overview of DNS, DHCP, and PTR records and their importance in a network
+                environment. Understanding these concepts is crucial for managing and automating the addition and
+                modification of records using scripts.</p>
+            <h3>DNS Records</h3>
+            <p>Domain Name System (DNS) is a system used to translate human-readable domain names (e.g.,
+                www.example.com) into IP addresses (e.g., 192.168.1.1). DNS records are entries in a DNS database that
+                store information about domain names and their corresponding IP addresses, as well as other data. There
+                are several types of DNS records, such as A (Address) records, CNAME (Canonical Name) records, and MX
+                (Mail Exchange) records, each serving a specific purpose.</p>
+            <h3>DHCP Records</h3>
+            <p>Dynamic Host Configuration Protocol (DHCP) is a network protocol that assigns IP addresses and other
+                network configuration information to devices automatically. DHCP records are entries in a DHCP server
+                that store information about IP address leases and reservations for devices on the network. This helps
+                maintain an organized IP address allocation system and avoids IP address conflicts.</p>
+            <h3>PTR Records</h3>
+            <p>Pointer (PTR) records are a type of DNS record that enables reverse DNS lookups. Reverse DNS lookups are
+                the process of resolving an IP address back to a domain name. PTR records are particularly useful for
+                email servers to verify the authenticity of the sender's domain and help reduce spam.</p>
+        </section>
+    </main>
+    <footer>
+        Project by Peter Rosasco, CMIT 220 - 2023
+    </footer>
+</body>
+
+</html>
