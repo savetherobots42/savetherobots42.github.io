@@ -1,0 +1,78 @@
+<!-- creating-static-records.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Rosasco's How To Website - Creating Static Records</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Peter Rosasco's How To Website</h1>
+    </header>
+    <nav>
+        <div class="nav-item">
+            <a href="index.html">Introduction</a>
+        </div>
+        <div class="nav-item">
+            <a href="dns-dhcp-ptr-records.html">DNS, DHCP, and PTR Records</a>
+        </div>
+        <div class="nav-item active">
+            <a href="creating-static-records.html">Creating Static Records</a>
+        </div>
+        <div class="nav-item">
+            <a href="setting-up-environment.html">Setting Up Environment</a>
+        </div>
+        <div class="nav-item">
+            <a href="creating-scripts.html">Creating Scripts</a>
+        </div>
+        <div class="nav-item">
+            <a href="how-to-run-scripts.html">How to Run Scripts</a>
+        </div>
+        <div class="nav-item">
+            <a href="troubleshooting.html">Troubleshooting</a>
+        </div>
+        <div class="nav-item">
+            <a href="conclusion.html">Conclusion</a>
+        </div>
+    </nav>
+    <main>
+        <section id="creating-static-records">
+            <h2>Creating Static Records</h2>
+            <p>Static records are manually assigned IP addresses and associated DNS records that do not change over
+                time. While dynamic records can be automatically updated through the DHCP server, static records provide
+                a consistent and unchanging reference to a specific network device or service. There are several reasons
+                why you might need to create static records, including:</p>
+
+            <ul>
+                <li><strong>Network Infrastructure:</strong> Devices such as routers, switches, and servers typically
+                    require static IP addresses to ensure they are always reachable and available for other devices on
+                    the network.</li>
+                <li><strong>Reliability:</strong> By assigning a static IP address and DNS record to a device, you can
+                    ensure that other devices and services can always locate and communicate with it. This is
+                    particularly important for devices that provide critical network services, such as domain
+                    controllers, mail servers, and file servers.</li>
+                <li><strong>Access Control:</strong> Assigning static IP addresses to specific devices can make it
+                    easier to manage and enforce access control policies, as you can reliably identify devices based on
+                    their IP addresses.</li>
+                <li><strong>IP Address Management:</strong> Using static records allows you to reserve a block of IP
+                    addresses for specific devices, making it easier to manage IP address allocation and avoid address
+                    conflicts.</li>
+            </ul>
+
+            <p>To create static records, you will typically use the management interfaces of your DNS and DHCP servers.
+                The exact process may vary depending on the server software you are using. In this website, we will go
+                through the steps of automating the process of creating static records using scripts. By following the
+                steps outlined in this website, you can create your own scripts to automate the process of creating
+                static records, ensuring a consistent and well-organized network infrastructure.</p>
+        </section>
+    </main>
+    <footer>
+        Project by Peter Rosasco, CMIT 220 - 2023
+    </footer>
+</body>
+
+</html>

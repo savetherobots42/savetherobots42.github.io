@@ -1,0 +1,74 @@
+<!-- troubleshooting.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Rosasco's How To Website - Troubleshooting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Peter Rosasco's How To Website</h1>
+    </header>
+    <nav>
+        <div class="nav-item">
+            <a href="index.html">Introduction</a>
+        </div>
+        <div class="nav-item">
+            <a href="dns-dhcp-ptr-records.html">DNS, DHCP, and PTR Records</a>
+        </div>
+        <div class="nav-item">
+            <a href="creating-static-records.html">Creating Static Records</a>
+        </div>
+        <div class="nav-item">
+            <a href="setting-up-environment.html">Setting Up Environment</a>
+        </div>
+        <div class="nav-item">
+            <a href="creating-scripts.html">Creating Scripts</a>
+        </div>
+        <div class="nav-item">
+            <a href="how-to-run-scripts.html">How to Run Scripts</a>
+        </div>
+        <div class="nav-item active">
+            <a href="troubleshooting.html">Troubleshooting</a>
+        </div>
+        <div class="nav-item">
+            <a href="conclusion.html">Conclusion</a>
+        </div>
+    </nav>
+    <main>
+        <section id="troubleshooting">
+            <h2>Troubleshooting</h2>
+            <p>If you encounter any issues while following the steps in this how-to guide, try the following
+                troubleshooting tips:</p>
+
+            <h3>Problem: Script does not run</h3>
+            <p>If you get an error message when running the script, double-check that the script file name and
+                directory path are correct. Make sure that the script file has a .ps1 extension and that PowerShell
+                execution policy is set to "RemoteSigned" or "Unrestricted".</p>
+
+            <h3>Problem: DHCP reservation not created</h3>
+            <p>If the DHCP reservation is not created, make sure that the DHCP server and scope IDs are correct. Also,
+                check that the IP address and MAC address of the device being reserved are accurate.</p>
+
+            <h3>Problem: DNS record not created</h3>
+            <p>If the DNS record is not created, make sure that the DNS server and zone name are correct. Also, check
+                that the hostname and IP address being used are accurate.</p>
+
+            <h3>Problem: PTR record not created</h3>
+            <p>If the PTR record is not created, make sure that the DNS server and reverse lookup zone name are
+                correct. Also, check that the IP address being used matches the IP address of the A record in the
+                forward lookup zone.</p>
+
+            <!-- Insert any additional troubleshooting tips here -->
+        </section>
+    </main>
+    <footer>
+        Project by Peter Rosasco, CMIT 220 - 2023
+    </footer>
+</body>
+
+</html>
