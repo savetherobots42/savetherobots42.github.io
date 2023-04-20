@@ -6,6 +6,15 @@ body {
     padding: 0;
 }
 
+main {
+    padding: 20px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
 header {
     background-color: #354a80;
     padding: 20px;
@@ -92,4 +101,4 @@ footer {
     font-size: 14px;
     margin-top: 10px;
     text-align: center;
-  }
+}
