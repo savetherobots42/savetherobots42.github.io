@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peter Rosasco's How To Website - Introduction</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Assets/CSS/normalize.css">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
 </head>
 
 <body>
@@ -20,14 +21,13 @@
         <div class="nav-item">
             <a href="dns-dhcp-ptr-records.html">DNS, DHCP, and PTR Records</a>
         </div>
-        <div class="nav-item">
-            <a href="creating-static-records.html">Creating Static Records</a>
-        </div>
-        <div class="nav-item">
-            <a href="setting-up-environment.html">Setting Up Environment</a>
-        </div>
-        <div class="nav-item">
-            <a href="creating-scripts.html">Creating Scripts</a>
+        <div class="dropdown">
+            <a href="#" class="nav-item dropbtn">Getting Started</a>
+            <div class="dropdown-content">
+                <a href="creating-static-records.html">Creating Static Records</a>
+                <a href="setting-up-environment.html">Setting Up Environment</a>
+                <a href="creating-scripts.html">Creating Scripts</a>
+            </div>
         </div>
         <div class="nav-item">
             <a href="how-to-run-scripts.html">How to Run Scripts</a>
@@ -39,6 +39,7 @@
             <a href="conclusion.html">Conclusion</a>
         </div>
     </nav>
+
     <main>
         <section id="introduction">
             <h2>Introduction</h2>
@@ -52,6 +53,9 @@
                 the process of adding and managing records can save time, minimize human errors, and ensure consistency
                 across your network. By following the instructions and examples provided in this website, you'll be able
                 to create, modify, and manage DNS, DHCP, and PTR records efficiently using scripts.</p>
+
+                <img src="Assets/Images/introright.jpg" alt="DNS" class="float-right">
+
 
             <p>Throughout this website, you will find information on:</p>
             <ol>
@@ -72,7 +76,7 @@
         </section>
     </main>
     <footer>
-        Project by Peter Rosasco, CMIT 220 - 2023
+        Project by Peter Rosasco, CNMS 165 - 2023
     </footer>
 
 </body>

@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peter Rosasco's How To Website - Creating Scripts</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Assets/CSS/normalize.css">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
 </head>
 
 <body>
@@ -20,14 +21,13 @@
         <div class="nav-item">
             <a href="dns-dhcp-ptr-records.html">DNS, DHCP, and PTR Records</a>
         </div>
-        <div class="nav-item">
-            <a href="creating-static-records.html">Creating Static Records</a>
-        </div>
-        <div class="nav-item">
-            <a href="setting-up-environment.html">Setting Up Environment</a>
-        </div>
-        <div class="nav-item active">
-            <a href="creating-scripts.html">Creating Scripts</a>
+        <div class="dropdown">
+            <a href="#" class="nav-item dropbtn">Getting Started</a>
+            <div class="dropdown-content">
+                <a href="creating-static-records.html">Creating Static Records</a>
+                <a href="setting-up-environment.html">Setting Up Environment</a>
+                <a href="creating-scripts.html" class="active">Creating Scripts</a>
+            </div>
         </div>
         <div class="nav-item">
             <a href="how-to-run-scripts.html">How to Run Scripts</a>
@@ -50,11 +50,11 @@
             <p>The following example script demonstrates how to create static records for multiple devices by iterating
                 through a range of IP addresses and creating DHCP reservations, A records, and PTR records for each
                 device. The script is written in PowerShell and uses cmdlets to interact with the DNS and DHCP servers.
-                <br> <!-- Placeholder for script picture goes here -->
+                <br>
             </p>
             <div id="script-image">
-                <img src="script_image.png" alt="Example script image">
-             </div>
+                <img src="Assets/Images/script_image.png" alt="Example script image">
+            </div>
             <p>The script creates static records for multiple devices by iterating through a range of IP addresses and
                 creating DHCP reservations, A records, and PTR records for each device. It uses PowerShell cmdlets to
                 interact with the DNS and DHCP servers. Here's a brief explanation of what the script does:</p>
@@ -79,7 +79,7 @@
         </section>
     </main>
     <footer>
-        Project by Peter Rosasco, CMIT 220 - 2023
+        Project by Peter Rosasco, CNMS 165 - 2023
     </footer>
 </body>
 
